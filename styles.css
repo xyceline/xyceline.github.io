@@ -1,0 +1,120 @@
+/* Basic styles for layout and typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #657667;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #a4a3a3;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+a {
+    color: #657667;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover, a:active {
+    color: #3d4a3e;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 20vw;
+    padding: 20px;
+    /* 移除padding-top，sticky不会遮挡内容 */
+}
+
+.about, .projects, .contact {
+    margin-bottom: 40px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.quote {
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    margin: 1.25em 0;
+    color: #444;
+}
+
+body {
+    background-color: #ffffff;  /* 设置整个页面的背景为白色 */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* 在小屏幕上自动换行 */
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-photo {
+    flex: 0 0 auto;
+}
+
+.profile-photo {
+    height: 30vw;
+    max-height: 500px;
+    width: auto;
+    /* width: 15vw;
+    max-width: 250px;
+    height: auto; */
+    border-radius: 8px;
+    display: block;
+}
